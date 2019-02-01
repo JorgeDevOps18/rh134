@@ -1,2 +1,8 @@
 1. Automatización de la Instalación con Kickstart
 
+1.1 Definición del Sistema Anaconda Kickstart
+    
+    Kickstart es una función para automatizar la instalación de Red Hat. El instalador Anaconda recibe las instrucciones
+    del archivo kickstart para la instalación automatizada del sistema, eliminando la necesidad de interactuar con el.
+    
+    Kickstart es similar a Jumpstart de Oracle Solaris o a la instalación desatendida de Microsoft Windows.
