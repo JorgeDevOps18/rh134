@@ -29,6 +29,18 @@
       - --netmask=, máscara de red para el sistema instalado.
       - --hostname=, nombre del host para el sistema instalado.
     - firewall --enabled --service=ssh,cups define cómo se configurará el firewall.
-    
+    - lang(obligatorio) -lang en_US.UTF-8, establece el idioma para usar durante la instalación y el idioma predeterminado.
+    - keyboard(obligatorio) - keyboard --vckeymap=us --xlayouts='us','us'
+    - timezone --utc --ntpservers=time.example.com Europe/Amsterdam, define la zona horaria, los servidores NTP y si el reloj del hardware usa UTC.
+    - auth --useshadow --enablemd5 --passalgo=sha512, establece opciones de autenticación.
+    - rootpw --plaintext redhat, define la contraseña raíz inicial.
+      - rootpw --iscrypted $6$KUnFfrTzO8jv.PiH$YlBbOtXBkWzoMuRfb0.SpbQ....XDR1UuchoMG1
+    - selinux --enforcing establece el estado de SELinux
+    - services --disabled=network,iptables,ip6tables --enabled=NetworkManager,firewalld,  servicios predeterminados que se ejecutarán.
+    - group --name=admins --gid=10001, crea grupos locales.
+    - 
+
+
+
 
 
