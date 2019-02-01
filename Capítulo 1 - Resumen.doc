@@ -6,3 +6,10 @@
     del archivo kickstart para la instalación automatizada del sistema, eliminando la necesidad de interactuar con el.
     
     Kickstart es similar a Jumpstart de Oracle Solaris o a la instalación desatendida de Microsoft Windows.
+    
+    Partes que conforman un archivo Kickstart:
+    
+    
+    
+    
+    
