@@ -1,1 +1,34 @@
+1. Automatización de la Instalación con Kickstart
+
+1.1 Definición del Sistema Anaconda Kickstart
+
+  Lista de comandos de archivo Kickstart
+  -COMANDOS DE INSTALACIÓN -----------------------------------------------------------------------------------------------
+    - url --url="ftp://installserver.example.com/pub/RHEL7/dvd", especifica la ubicación de los medios de instalación.
+    - repo --name="Custom Packages" --baseurl="ftp://repo.example.com/custom", opción que le indica a Anaconda repositorios de paquetes validos de yum.
+    - text(opcional) - realiza la instalación kickstart en modo texto.
+    - vnc vnc --password=redhat, permite la visualización de forma remota de la instalación gráfica vía VNC.
+    - askmethod
+    - clearpart --all --drives=sda,sdb --initlabel, borra las particiones especificadas antes de la instalación.
+    - part /home --fstype=ext4 --label=homes --size=4096 --maxsize=8192 --grow, tamaño, el formato y el nombre de una partición.
+    - ignoredisk --drives=sdc, ignora los discos especificados durante la instalación
+    - bootloader --location=mbr --boot-drive=sda, define dónde instalar el cargador de arranque.
+    - volgroup myvg pv.01, volgroup crea grupos de volúmenes LVM.
+    - logvol / --vgname=myvg --fstype=xfs --size=2048 --name=rootvol --grow, logvol crea volumenes lógicos.
+        - logvol /var --vgname=myvg --fstype=xfs --size=4096 --name=varvol
+    - zerombr, se inicializan los discos cuyo formato no se reconoce.
+  -------------------------------------------------------------------------------------------------------------------------- 
+  - COMANDOS DE RED -----------------------------------------------------------------------------------------------
+    - network --device=eth0 --bootproto=dhcp, Configura la información de red para el sistema de destino y activa dispositivos de red en el entorno del instalador.
+      - --bootproto= dhcp, bootp, o static.
+      - --device=, usado para seleccionar un dispositivo Ethernet específico para la instalación.
+      - --ip=, dirección IP para la máquina a instalar.
+      - --gateway=, gateway por defecto como una dirección IP.
+      - --nameserver=, nombre de servidor primario, como una dirección IP.
+      - --nodns, no configura un servidor DNS.
+      - --netmask=, máscara de red para el sistema instalado.
+      - --hostname=, nombre del host para el sistema instalado.
+    - firewall --enabled --service=ssh,cups define cómo se configurará el firewall.
+    
+
 
