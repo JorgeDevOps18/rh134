@@ -38,7 +38,22 @@
     - selinux --enforcing establece el estado de SELinux
     - services --disabled=network,iptables,ip6tables --enabled=NetworkManager,firewalld,  servicios predeterminados que se ejecutarán.
     - group --name=admins --gid=10001, crea grupos locales.
-    - 
+    - user --name=jdoe --gecos="John Doe" --groups=admins --password=changeme --plaintext, crea usuarios locales.
+  -------------------------------------------------------------------------------------------------------------------------- 
+  - COMANDOS VARIOS -----------------------------------------------------------------------------------------------
+    - logging --host=loghost.example.com --level=info, define cómo Anaconda se registrará durante la instalación.
+    - firstboot --disabled, determina si el primer arranque se inicia la primera vez que se inicia el sistema.
+    - reboot, poweroff, halt especifica qué debe suceder luego de finalizada la instalación.
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
 
 
 
