@@ -9,6 +9,17 @@
     
     Partes que conforman un archivo Kickstart:
     
+        - Comienzan con una lista de comandos que definen cómo se instalará la máquina.
+        - El caracter '#', representa un comentario.
+        - Las secciones adicionales comienzan con un caracter '%' y terminan con '%end'.
+        - La sección '#package', especifica el software que se instalara en la máquina.
+            - Los paquetes individuales se especifican por nombre.
+            - El caracter '@', representa a un grupo de paquetes, seguido del nombre o id del grupo.
+            - Los grupos de grupos de paquetes, comienzan con el caracter '@^', seguido por el id o nombre de grupo.
+            - Los grupos tienen componentes obligatorios, predeterminados y opcionales.
+            - Los componentes obligatorios y predeterminados serán instalados por Kickstart.
+            - El caracter '-', permite excluir paquetes o grupo de paquetes opcionales, más no paquetes obligatorios o que
+              tengan algun tipo de dependencia.
     
     
     
