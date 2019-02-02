@@ -22,7 +22,17 @@
               tengan algun tipo de dependencia.
             - Los scripts '%post', son los mas comunes y permiten configurar despues de que todo el software se ha instalado.
             - Los scripts '%pre',  se ejecuta antes de que haga alguna partición del disco.
+ 
     
+1.2 Implementación de un nuevo sistema virtual con kickstart
+
+    Tres pasos para implementación de kickstart:
+        1. Crear el archivo de configuración de kickstart
+        2. Publicar el archivo de configuración kickstrat para el instalador.
+        3. Arrancar anaconda y asignar el archivo de configuración de kickstart
+    
+    Uso del editor de textos para el archivo kickstart
+    Usar la utilidad de system-config-kickstart
     
     
     
