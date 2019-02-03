@@ -1,0 +1,10 @@
+Comando grep
+
+  grep [opcion] [cadena] [archivo]
+    opciones:
+      -i : no diferencia entre mayusculas ni minusculas
+      -v : muestra las lineas que no guardan ninguna coincidencia con la cadena
+      -r : busqueda recursiva para grupo de archivos o en directorios
+      -A : número de lineas despues de la coincidencia de la cadena.
+      -B : número de lineas antes de la coicidencia de la cadena.
+      -e : funciona como un -or- logico  
