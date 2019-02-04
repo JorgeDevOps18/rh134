@@ -12,3 +12,16 @@ Comando grep
   Delimitadores de línea:
     - ^, inicio de un delimitador de línea. Coincidencias en al inicio de la linea.
     - $, final de un delimitador de línea. Coincidencia al final de la línea.
+  
+  Comodines y Multiplicadores:
+    - . , caracter comdoín sin restricciones. ejemplo: grep 'c.t' /usr/share/dict/words.
+    - [] , comodines de caracteres aceptables. ejemplo: grep 'c[abc]t' /usr/share/dict/words.
+    - * , multiplicador usado en una expresión regular para modificar el caracter de 0 a infinito. ejemplo: grep 'c.*t' /usr/share/dict/words.
+    - \\{}, multiplicador explicito. ejemplo: grep 'c.\\{2\\}t' /usr/share/dict/words.
+  
+  
+  Ejemplos: 
+    - cat /proc/cpuinfo | grep 'model name'
+    - cat /proc/cpuinfo | grep '^m'
+    - ps -ef | grep 'root'
+    - ifconfig enp0s3 | grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}'
