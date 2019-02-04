@@ -22,11 +22,12 @@ Comando grep
     - \\{}, multiplicador explicito. ejemplo: grep 'c.\\{2\\}t' /usr/share/dict/words.
   
   
-  Ejemplos: 
+  Ejemplos y Practica: 
     - cat /proc/cpuinfo | grep 'model name'
     - cat /proc/cpuinfo | grep '^m'
     - ps -ef | grep 'root'
     - ifconfig enp0s3 | grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}'
+    - ifconfig enp0s3 | egrep -o '([0-9]{1,3}\.){3}[0-9]{1,3}'
 
 
 
