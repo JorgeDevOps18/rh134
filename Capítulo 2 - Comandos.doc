@@ -9,7 +9,7 @@ Comando grep
       -B : número de lineas antes de la coicidencia de la cadena.
       -e : funciona como un -or- logico
       -o : muestra solo la parte de la linea que coincide con el patron.
-      -E : interpreta al patron como una expresion regular extendida.
+      -E : interpreta el patron como una expresion regular extendida.
       
   Delimitadores de línea:
     - ^, inicio de un delimitador de línea. Coincidencias en al inicio de la linea.
