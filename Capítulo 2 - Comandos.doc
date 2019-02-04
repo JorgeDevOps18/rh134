@@ -7,4 +7,8 @@ Comando grep
       -r : busqueda recursiva para grupo de archivos o en directorios
       -A : número de lineas despues de la coincidencia de la cadena.
       -B : número de lineas antes de la coicidencia de la cadena.
-      -e : funciona como un -or- logico  
+      -e : funciona como un -or- logico
+      
+  Delimitadores de línea:
+    - ^, inicio de un delimitador de línea. Coincidencias en al inicio de la linea.
+    - $, final de un delimitador de línea. Coincidencia al final de la línea.
