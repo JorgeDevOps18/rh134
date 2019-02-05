@@ -26,7 +26,25 @@ Edittor de archivos VIM
     - Modo Insertar: Modo usado para la edición de texto normal.
     - Modo ex: Modo usado para guardar, crerra y abrir achivos, buscar y remplazar, y otras operaciones complejas.
     
+  -- APERTURA DE ARCHIVOS --
   
+  vim [archivo]
+    
+  * Si intenta abrir un archivo que no existe, pero el directorio que especifica está disponible, vim le informará 
+    que está editando un [archivo nuevo], y creará el archivo cuando lo guarde por primera vez.
+    
+  - vim se inicia en modo comando.
+  - Partes del archivo que se estan mostrando
+      -  ALL: [Todo]
+      -  TOP: [Superior]
+      -  BOT: [Inferior]
+      -  %: indica en que parte del archivo estamos.
+      
+      
+      
+      
+      
+
   
   
   
