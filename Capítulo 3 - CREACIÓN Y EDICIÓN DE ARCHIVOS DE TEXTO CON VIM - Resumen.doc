@@ -20,5 +20,14 @@ Edittor de archivos VIM
   Editor Modal
     - Un editor modal significa que la función de determinados comandos y secuencia de teclas cambia en función del modo que este
       activo
+      
+  Modos en VIM:
+    - Modo Comando: Modo usado para la exploración de archivos, copiar y pegar, y ejecutar comandos simples.
+    - Modo Insertar: Modo usado para la edición de texto normal.
+    - Modo ex: Modo usado para guardar, crerra y abrir achivos, buscar y remplazar, y otras operaciones complejas.
+    
+  
+  
+  
   
   
