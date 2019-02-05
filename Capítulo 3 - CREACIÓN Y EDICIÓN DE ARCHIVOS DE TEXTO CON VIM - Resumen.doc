@@ -1,7 +1,24 @@
 Edittor de archivos VIM
 
-  VIM - VI mejorado (VI IMproved)
+  VIM - VI mejorado (VI IMproved) - Editor Modal
       - Resaltado de sintaxis
       - Modos de finalización
       - Revisión ortografica
+      - Admite scripts en varios idiomas
+      - Varios Plug-ins de tipos de archivos
+      - Se puede adaptar a casi cualquier rol
+      
   Otros editores basados en línea son: 'ed' y 'ex'.
+  
+  * Los usuarios sin privilegios que ejcutan vi, en realidad se ejecuta vim atraves de un alias configurado desde /etc/profile.d/vim.sh
+  
+  Versiones de VIM
+    - vim-minimal: Paquete que proporciona vi y rvi(restringido), incluido en una instalación minima de rhel 7.
+    - vim-enhanced: Paquete que proporciona el comando VIM, con funciones de resaltado de sintaxis, plug-ins de tipos de archivos y revisión ortografica.
+    - vim-X11: Paquete que proporciona gvim(vim ejecutado con su interfaz grafica)
+  
+  Editor Modal
+    - Un editor modal significa que la función de determinados comandos y secuencia de teclas cambia en función del modo que este
+      activo
+  
+  
