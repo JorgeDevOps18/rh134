@@ -1,1 +1,63 @@
 VIM
+
+    Cambiar a modo insertar
+      - i(insertar): Cambia al modo insertar y comienza a insertar antes de la posición actual del cursor.
+      - a(anexar): Cambia al modo insertar y comienza a insertar luego de la posición actual del cursor.
+      - o: Abre una nueva línea debajo de la actual y cambie al modo insertar.
+      
+      - I: Mueve el cursor hasta el inicio de la línea actual y cambia al modo insertar. 
+      - A: Mueve el cursor hasta el final de la línea actual y cambia al modo insertar.
+      - R(replace): Cambia al modo replace, y comienza en el carácter bajo el cursor. En el modo replace, 
+        no se inserta texto, sino que cada carácter que ingresa reemplaza a un carácter del documento actual.
+      - O: Abre una nueva línea arriba de la actual y cambie al modo insertar.
+      
+    Modo Comando:
+        - (shift)zz: guarda los cambios en el bufer.
+    
+    Mover cursor en modo comando:
+        - h: Cursor una posición a la izquierda.
+        - l: Cursor una posición a la derecha.
+        - j: Cursor una línea abajo.
+        - k: Cursor una línea arriba.
+        - ^: Mueve el cursor hacia el inicio de la linea actual.
+        - $: Mueve el cursor hacia el final de la linea actual.
+        - gg: Mueve el cursor hacia la primera línea del documento.
+        - G: Mueve el cursor hacia la última línea del documento.
+    
+    Mover cursor por oración, palabra o parrafo(modo comando):
+        - w: Mueve el cursor hasta el principio de la siguiente palabra (W incluye puntuación).
+        - b: Mueve el cursor hasta el principio de la palabra anterior (B incluye puntuación).
+        - (: Mueve el cursor hasta el inicio de la oración actual o anterior. 
+        - ): Mueve el cursor hasta el inicio de la siguiente oración.
+        - {: Mueve el cursor hasta el inicio del párrafo actual o anterior.
+        - {: Mueve el cursor hasta el inicio del siguiente párrafo.
+
+    Modo ex:
+        - :wq -> Guarda y cierra el archivo actual.
+        - :x  -> Guarda el archivo actual si hay cambios sin guardar, y luego lo cierra.
+        - :w  -> Guarda el archivo actual y permanece en el editor.
+        - :w [nombrearchivo] -> Guarda el archivo actual bajo un nombre de archivo diferente.
+        - :q  -> Cierra el archivo actual (solo si no hay cambios sin guardar).
+        - :q! Cierra el archivo actual, e ignora los cambios no guardados.
+        - :n  -> para conmutar el archivo actual con otros archivos abiertos.
+        - :args  -> lista de archivos abiertos
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
